@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-      <a class="navbar-brand" href="/">Latihan CRUD</a>
+      <a class="navbar-brand" href="#/">Latihan CRUD</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -17,13 +17,13 @@
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="#/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/users">Users</a>
+            <a class="nav-link" href="#/users">Users</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/users/add">Create User</a>
+            <a class="nav-link" href="#/users/add">Create User</a>
           </li>
         </ul>
       </div>

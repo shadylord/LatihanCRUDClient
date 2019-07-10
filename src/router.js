@@ -35,6 +35,5 @@ export default new Router({
       name: "not-found",
       component: NotFound
     }
-  ],
-  mode: "history"
+  ]
 });

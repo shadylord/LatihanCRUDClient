@@ -104,7 +104,9 @@ export default {
   },
   mounted() {
     axios
-      .get(`http://localhost:3000/users/${this.$route.params.id}`)
+      .get(
+        `https://shady-latihan-crud-server.herokuapp.com/users/${this.$route.params.id}`
+      )
       .then(user => {
         this.user = user.data;
       })
@@ -137,9 +139,12 @@ export default {
       }
 
       axios
-        .patch(`http://localhost:3000/users/update/${this.user.id}`, {
-          ...this.user
-        })
+        .patch(
+          `https://shady-latihan-crud-server.herokuapp.com/users/update/${this.user.id}`,
+          {
+            ...this.user
+          }
+        )
         .then(response => {
           this.$router.push("/users");
         })

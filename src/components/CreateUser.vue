@@ -129,7 +129,9 @@ export default {
       }
 
       axios
-        .post("http://localhost:3000/users/add", { ...this.user })
+        .post("https://shady-latihan-crud-server.herokuapp.com/users/add", {
+          ...this.user
+        })
         .then(response => {
           this.$router.push("/users");
         })

@@ -23,7 +23,9 @@ export default {
     },
     deleteUser() {
       axios
-        .delete(`http://localhost:3000/users/delete/${this.user.id}`)
+        .delete(
+          `https://shady-latihan-crud-server.herokuapp.com/users/delete/${this.user.id}`
+        )
         .then(response => {
           this.$router.go();
         })

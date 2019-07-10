@@ -44,7 +44,7 @@ export default {
   },
   mounted() {
     axios
-      .get("http://localhost:3000/users")
+      .get("https://shady-latihan-crud-server.herokuapp.com/users")
       .then(response => (this.users = response.data))
       .catch(error => console.log(error));
   }

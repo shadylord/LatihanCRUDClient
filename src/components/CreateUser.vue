@@ -129,7 +129,7 @@ export default {
       }
 
       axios
-        .post("https://shady-latihan-crud-server.herokuapp.com/users/add", {
+        .post("https://shady-latihan-sequelize.herokuapp.com/api/users", {
           ...this.user
         })
         .then(response => {
